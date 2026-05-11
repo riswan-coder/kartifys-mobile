@@ -55,25 +55,6 @@ export default function ShopDetailScreen({ route, navigation }) {
     return null;
   };
 
-  if (loading) {
-    return (
-      <View style={styles.loadingContainer}>
-        <View style={styles.loadingLogo}>
-          <View style={styles.loadingLogoRow}>
-            <Text style={styles.loadingT}>T</Text>
-            <Text style={styles.loadingK}>K</Text>
-          </View>
-        </View>
-        <Text style={styles.loadingAppName}>TrendKart</Text>
-        <ActivityIndicator
-          size="small"
-          color="#4f46e5"
-          style={{ marginTop: 20 }}
-        />
-      </View>
-    );
-  }
-
   return (
     <View style={styles.container}>
       {/* Header */}
