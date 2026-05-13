@@ -6,30 +6,31 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#4f46e5"
-    },
-    "assetBundlePatterns": ["**/*"],
-    "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.kartifys.app"
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#4f46e5"
-      },
-      "package": "com.kartifys.app"
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    },
     "extra": {
       "eas": {
-        "projectId": "95d1ee13-0241-4b54-bbc7-3f4f4b4a7614"
+        "projectId": "9cfc9efb-9815-4d3e-9938-691f524fe6d3"
       }
+    },
+    "android": {
+      "package": "com.rizwan_6.kartifys"
+    }
+  },
+  "assetBundlePatterns": [
+    "**/*"
+  ],
+  "ios": {
+    "supportsTablet": true,
+    "bundleIdentifier": "com.kartifys.app"
+  },
+  "android": {
+    "package": "com.kartifys.app"
+  },
+  "web": {
+    "favicon": "./assets/favicon.png"
+  },
+  "extra": {
+    "eas": {
+      "projectId": "95d1ee13-0241-4b54-bbc7-3f4f4b4a7614"
     }
   }
 }

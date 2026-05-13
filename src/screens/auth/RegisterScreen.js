@@ -113,10 +113,10 @@ export default function RegisterScreen({ navigation }) {
       <ScrollView contentContainerStyle={styles.scroll}>
 
         <View style={styles.logoBox}>
-          <Text style={styles.logoText}>E</Text>
+          <Text style={styles.logoText}>k</Text>
         </View>
         <Text style={styles.title}>Create Account</Text>
-        <Text style={styles.subtitle}>Join TrendKart to shop local stores</Text>
+        <Text style={styles.subtitle}>Join Kartify to shop local stores</Text>
 
         <View style={styles.form}>
 

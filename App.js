@@ -60,9 +60,7 @@ function SplashScreen({ onFinish }) {
         { opacity, transform: [{ scale }] }
       ]}>
         <View style={splash.logoBox}>
-          <View style={splash.logoRow}>
-            <Text style={splash.logoT}>k</Text>
-          </View>
+          <Text style={splash.logoT}>k</Text>
         </View>
         <Text style={splash.appName}>kartifys</Text>
         <Text style={splash.tagline}>Shop local · delivered to you</Text>
@@ -95,21 +93,11 @@ const splash = StyleSheet.create({
     borderWidth: 2,
     borderColor: 'rgba(255,255,255,0.25)',
   },
-  logoRow: {
-    flexDirection: 'row',
-    alignItems: 'flex-end',
-  },
   logoT: {
     fontSize: 54,
     fontWeight: '900',
     color: '#fff',
     lineHeight: 58,
-  },
-  logoK: {
-    fontSize: 36,
-    fontWeight: '700',
-    color: 'rgba(255,255,255,0.65)',
-    marginBottom: 6,
   },
   appName: {
     fontSize: 34,
@@ -205,34 +193,13 @@ function RootStack() {
   );
 }
 
- function AppNavigator() {
+function AppNavigator() {
   const { loading } = useAuth();
 
   if (loading) {
     return (
-      <View style={{
-        flex: 1,
-        backgroundColor: '#4f46e5',
-        alignItems: 'center',
-        justifyContent: 'center',
-      }}>
-        <View style={{
-          width: 80, height: 80,
-          backgroundColor: 'rgba(255,255,255,0.18)',
-          borderRadius: 22,
-          alignItems: 'center',
-          justifyContent: 'center',
-          marginBottom: 16,
-        }}>
-          <View style={{ flexDirection: 'row', alignItems: 'flex-end' }}>
-            <Text style={{ fontSize: 38, fontWeight: '900', color: '#fcf6f6' }}>k</Text>
-            <Text style={{ fontSize: 26, fontWeight: '700', color: 'rgba(255,255,255,0.65)', marginBottom: 4 }}>k</Text>
-          </View>
-        </View>
-        <Text style={{ fontSize: 22, fontWeight: '800', color: '#fff', letterSpacing: 1 }}>
-          kartify
-        </Text>
-        <ActivityIndicator color="rgba(255,255,255,0.6)" size="small" style={{ marginTop: 20 }} />
+      <View style={{ flex: 1, backgroundColor: '#fff', alignItems: 'center', justifyContent: 'center' }}>
+        <ActivityIndicator size="large" color="#4f46e5" />
       </View>
     );
   }
